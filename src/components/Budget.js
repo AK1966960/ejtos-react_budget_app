@@ -12,6 +12,7 @@ const Budget = () => {
 <span>Budget: £{budget}</span>
 <input type="number" step="10" value={newBudget} onChange={handleBudgetChange}></input>
 </div>
-    );
+    )
 };
+
 export default Budget;
