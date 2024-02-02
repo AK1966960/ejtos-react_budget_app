@@ -1,16 +1,46 @@
+import React from 'react';
+
 const Currency = () => {
-    return(
-    <div className='alert alert-info'>
-        <span>
-            Currency {
-            <select className="currencylist" id="currencyselect">
-            <option class="list" value="Dollar" name="dollar"> $ Dollar</option>
-            <option value="Pound" name="pound">£ Pound</option>
-            <option value="Euro" name="euro">€ Euro</option>
-            <option value="Ruppee" name="ruppee">₹ Ruppee</option>
-            </select>}
-        </span>
+  const selectStyle = {
+    width: '150px',
+    padding: '5px',
+    border: '1px solid #92e398',
+    borderRadius: '4px',
+    fontSize: '16px',
+    color: 'white',
+    backgroundColor: '#92e398',
+    width: 'fit-content',
+  };
+
+  const optionStyle = {
+    backgroundColor: '#93e499',
+    color: '#333',
+    fontSize: '14px',
+  };
+
+  const curr = {
+    backgroundColor: '#92e398',
+    height: '57px'
+  }
+
+  const fn = {
+    color: 'white',
+  }
+
+  return (
+    <div style={curr} className='alert alert-info'>
+      <span style={fn}>
+        Currency ({
+          <select style={selectStyle} id="currencyselect">
+            <option style={optionStyle} value="Dollar" name="dollar"> $ Dollar</option>
+            <option style={optionStyle} value="Pound" name="pound">£ Pound</option>
+            <option style={optionStyle} value="Euro" name="euro">€ Euro</option>
+            <option style={optionStyle} value="Ruppee" name="ruppee">₹ Ruppee</option>
+        </select>
+        })
+      </span>
     </div>
-    );
+  );
 };
+
 export default Currency;
