@@ -3,7 +3,6 @@ import React from 'react';
 const Currency = () => {
   const selectStyle = {
     width: '150px',
-    padding: '5px',
     border: '1px solid #92e398',
     borderRadius: '4px',
     fontSize: '16px',
@@ -25,6 +24,7 @@ const Currency = () => {
 
   const fn = {
     color: 'white',
+    display: 'flex',
   }
 
   return (
